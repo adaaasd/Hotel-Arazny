@@ -1,0 +1,1131 @@
+body,html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+}
+h1,h2,h3,h4,h5,p,a {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+* {
+	font-family: "Inter";
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gotham-m';
+    src: url('Gotham Pro/gothampro_medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Gotham-b';
+    src: url('Gotham Pro/gothampro_bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Gotham-l';
+    src: url('Gotham Pro/gothampro_light.ttf') format('truetype');
+}
+
+
+/* Хедер меню */
+
+.header {
+	background-image: url("../photo/bg_section_2.webp");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	position: relative;
+	margin-bottom: 70px;
+}
+	.header:before {
+		content: "";
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(0, 0, 0, 0.5);
+	    z-index: 1;
+	}
+.header_nav {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 30px 15px 0 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 5;
+}
+.logo {
+	font-family: "Unbounded";
+	font-weight: 400;
+	font-size: 27px;
+	line-height: 120%;
+	text-transform: capitalize;
+	letter-spacing: 0.04em;
+	color: #fff;
+}
+	.logo_close {
+		display: none;
+	}
+.nav_two_right {
+	display: flex;
+	column-gap: 76px;
+	align-items: center;
+}
+.main_nav_block ul {
+	display: flex;
+	column-gap: 30px;
+}
+.nav_text_header {
+	font-family: "Raleway";
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 89%;
+	color: #fff;
+}
+.btn_booking {
+	border-radius: 15px;
+	background-color: #2A7E3E;
+	width: 140px;
+	height: 40px;
+	font-weight: 600;
+	font-size: 10px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.block_title_site {
+	position: absolute;
+	z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 880px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+	.block_title_site * {
+		color: #fff;
+	}
+.title_site {
+	font-family: "Unbounded";
+	font-weight: 600;
+	font-size: 60px;
+	line-height: 133%;
+	letter-spacing: -0.02em;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.block_title_site_2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+}
+.btn_href_2 {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 133%;
+}
+
+/* Об отеле */
+.section_about {
+	margin-bottom: 70px;
+}
+.min-1200 {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.block_about_text {
+	max-width: 589px;
+}
+.title_section {
+	font-family: "Gotham-m";
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 140%;
+	color: #232423;
+	margin-bottom: 30px;
+}
+.text_company {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 160%;
+	margin-bottom: 30px;
+}
+
+.btn_about {
+	border-radius: 10px;
+	background-color: #eaf5ed;
+	width: 215px;
+	height: 56px;
+	font-weight: 600;
+	font-size: 14px;
+	color: #2a7e3e;
+	line-height: 170%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.section_about .min-1200 {
+	display: flex;
+	align-items: center;
+	column-gap: 40px;
+}
+
+/* Cлайдер */
+
+.slider {
+  position: relative; /* Для корректной работы Slick Slider */
+  width: 600px; /* Ширина контейнера слайдера */
+  height: 490px; /* Высота контейнера слайдера */
+  margin: 0 auto; /* Центрирование слайдера */
+}
+
+.slick-slider {
+  width: 100%;
+  height: 100%;
+}
+
+
+.slick-slide img {
+  width: 100%;
+  height: 100%;
+}
+.slick-initialized .slick-slide {
+	object-fit: cover;
+	height: 490px;
+	border-radius: 15px;
+}
+
+/* Третий блок */
+
+.section_hotel_accommodation img {
+	width: 100%;
+	height: 900px;
+	object-fit: cover;
+	display: block;
+}
+.section_hotel_accommodation {
+	position: relative;
+}
+	.section_hotel_accommodation:before {
+		content: "";
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(0, 0, 0, 0.5);
+	    z-index: 1;
+	}
+.block_hotel_accommodation {
+	max-width: 635px;
+}
+	.block_hotel_accommodation {
+		position: absolute;
+		z-index: 2;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+	.block_hotel_accommodation p {
+		margin-bottom: 94px;
+	}
+.title_section_text {
+	font-family: "Gotham-b";
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 130%;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	margin-bottom: 32px;
+}
+.text_hotel {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 160%;
+}
+	.block_hotel_accommodation * {
+		color: #fff;
+		text-align: center;
+	}
+.btn_href_3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #fff;
+	border-radius: 60px;
+	max-width: 370px;
+	height: 60px;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 auto;
+	transition: all .5s ease-in-out;
+}
+	.btn_href_3:hover {
+		background-color: #fff;
+		border: none;
+		color: #101010;
+	}
+
+/* Номера */
+
+.section_nomer {
+	display: flex;
+}
+.block_nomer {
+	width: 50%;
+	position: relative;
+}
+	.block_nomer:before {
+		content: "";
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(0, 0, 0, 0.5);
+	    z-index: 1;
+	}
+.block_nomer img {
+	width: 100%;
+	height: 720px;
+	object-fit: cover;
+	display: block;
+}
+.section_nomer .title_section_text {
+	font-size: 45px;
+}
+.section_nomer .text_hotel {
+	margin-bottom: 21px;
+}
+.btn_href_4 {
+	width: 202px;
+	height: 40px;
+	font-size: 14px;
+}
+.block_nomer_info {
+	width: 420px;
+}
+
+.section_nomer_2 img {
+	width: 100%;
+	height: 720px;
+	object-fit: cover;
+	display: block;
+}
+.section_nomer_2 {
+	position: relative;
+}
+	.section_nomer_2:before {
+		content: "";
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(0, 0, 0, 0.5);
+	    z-index: 1;
+	}
+	.section_nomer_2 p {
+		margin-bottom: 21px;
+	}
+
+/* Ресторан */
+.section_food {
+	margin-bottom: 70px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #d8dbd7;
+}
+.block_info_food {
+	max-width: 580px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.block_info_food .title_section_text {
+	line-height: 145%;
+	margin-bottom: 10px;
+}
+.block_info_food .text_company {
+	font-weight: 400;
+	color: #232423;
+	margin-bottom: 30px;
+}
+.btn_href_5 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #232423;
+	border-radius: 60px;
+	width: 166px;
+	height: 40px;
+	font-size: 14px;
+	color: #232423;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: all .5s ease-in-out;
+}
+	.btn_href_5:hover {
+		background-color: #101010;
+		color: #fff;
+	}
+.block_img_food {
+	width: 50%;
+}
+
+.block_img_food img {
+	width: -webkit-fill-available;
+	display: block;
+	object-fit: cover;
+	height: 800px;
+}
+/* Правила проживания */
+
+.section_rules {
+	margin-bottom: 70px;
+	padding: 50px 0px;
+	background-color: #F1F0EC;
+	text-align: center;
+}
+.main_rules {
+	max-width: 520px;
+	margin: 0 auto;
+}
+.title_rules {
+	font-family: "Unbounded";
+	font-size: 30px;
+	line-height: 237%;
+	text-transform: uppercase;
+	color: #2d3329;
+	font-weight: 400;
+	margin-bottom: 11px;
+}
+.text_rules {
+	margin-bottom: 25px;
+}
+.text_rules_2 {
+	display: none;
+}
+.btn_href_6 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #101010;
+	border-radius: 5px;
+	width: 284px;
+	height: 64px;
+	font-size: 15px;
+	color: #101010;
+	margin: 0 auto;
+	font-weight: 400;
+	transition: all .5s ease-in-out;
+}
+	.btn_href_6:hover {
+		background-color: #101010;
+		color: #fff;
+	}
+.pravila_hotel_block {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* Галерея фоток */
+
+.slider_gallery img {
+	height: 520px;
+	object-fit: cover;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+.section_services {
+	margin-bottom: 70px;
+}
+.section_video {
+	margin-bottom: 150px;
+}
+
+/* Видео блок */
+
+.video-container {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.video-container video {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.inst_block_text {
+	font-size: 18px;
+	font-weight: 300;
+	letter-spacing: -0.03em;
+	text-align: center;
+	color: #101010;
+	margin-bottom: 35px;
+}
+
+.btn_href_inst {
+	background-color: #101010;
+	width: 300px;
+	height: 40px;
+	font-weight: 400;
+	font-size: 10px;
+	letter-spacing: 0.01em;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;	
+	margin: 0 auto;
+}
+
+/* Футер */
+
+footer {
+	background-image: url("../photo/footer_bg.webp");
+	background-size: cover;
+	background-position: center;
+	height: 575px;
+	position: relative;
+}
+
+	footer:before {
+		content: "";
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(0, 0, 0, 0.4);
+	    z-index: 1;
+	}
+
+
+.title_site_footer {
+	font-family: "Gotham-b";
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 130%;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;	
+}
+.text_site_footer {
+	font-family: "Gotham-l";
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 130%;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;	
+	margin: 40px 0px;
+}
+
+.btn_href_7 {
+	border-color: #fff;
+	color: #fff;
+	width: 296px;
+	height: 70px;
+	font-size: 16px;
+}
+
+	.btn_href_7:hover {
+		background-color: #fff;
+		color: #101010;
+	}
+
+/* Контакты */
+
+.header_two {
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+	margin-bottom: 40px;
+}
+.header_two .header_nav {
+	padding: 20px 15px;
+}
+.header_two * {
+	color: #101010;
+}
+.header_two .btn_booking {
+	color: #fff;
+}
+.contact_section {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+	margin-bottom: 115px;
+
+}
+.main_contact {
+	display: flex;
+	justify-content: center;
+	column-gap: 120px;
+}
+.main_address_phone {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.title_section_vse {
+	color: #000;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 146%;
+}
+.main_address_phone h2 {
+	margin-bottom: 35px;
+}
+.block_phone_contact {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+.block_social_network {
+	display: flex;
+	column-gap: 10px;
+}
+	.block_social_network img  {
+		width: 50px;
+	}
+.main_maps h2 {
+	margin-bottom: 26px;
+}
+
+.additionally_text {
+	font-size: 20px;
+	color: #000;
+	line-height: 135%;
+	letter-spacing: -0.03em;
+	font-weight: 300;
+}
+
+.btn_phone_footer {
+	font-weight: 300;
+	font-size: 23px;
+	line-height: 135%;
+	letter-spacing: -0.03em;
+	color: #000;
+}
+
+/* Страница номеров */
+
+.section_nomer_2_2 {
+	margin-bottom: 50px;
+}
+.block_nomer_ph_bk {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.block_nomer_ph_bk .slider-2 {
+	max-width: 750px;
+}
+	.block_nomer_ph_bk .slider-2 img {
+		width: 100%;
+		height: 640px;
+		border-radius: 10px;
+		object-fit: cover;
+	}
+.block_nomer_ph_bk .slick-dots {
+	bottom: 10px;
+}
+.block_nomer_ph_bk .slick-dots li button:before {
+	color: #fff;
+	opacity: 1;
+	font-size: 7px;
+}
+.block_nomer_ph_bk .slick-dots li.slick-active button:before {
+	color: #b2b2b2;
+}
+.block_nomer_ph_bk .slick-dotted.slick-slider {
+	margin: 0;
+}
+
+.block_nomer_ph_bk .slick-slider .slick-track, .slick-slider .slick-list {
+	height: 640px;
+}
+.section_form_booking {
+	padding: 30px 40px;
+	border-radius: 30px;
+	background-color: #f9f9fb;
+    max-width: 370px;
+    width: 100%;
+    height: max-content;
+}
+.price_text {
+	font-size: 22px;
+	font-family: "Gotham-m";
+	margin-bottom: 26px;
+}
+.main_zaezd {
+	margin-bottom: 30px;
+}
+.text_zaezd {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 150%;
+	color: #101010;
+	border-radius: 30px;
+	padding: 5px 16px;
+	background-color: #eee;
+	display: inline-block;
+}
+.block_price {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+}
+.block_svyaz {
+	display: flex;
+	flex-direction: column;
+}
+.text_tell {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 150%;
+	color: #101010;
+	font-family: "Unbounded";
+}
+.title_block_bk {
+	font-size: 16px;
+	color: #101010;
+	font-weight: 400;
+	font-family: "Unbounded";
+	margin-bottom: 16px;
+}
+.tell_phone {
+	margin-bottom: 10px;
+}
+
+.section_info_nomer {
+	margin-bottom: 120px;
+}
+.main_opis_nomer {
+	max-width: 740px;
+}
+.opis_nomer {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 150%;
+	color: #515753;
+	margin-bottom: 40px;
+}
+.main_udobstva h4 {
+	font-size: 20px;
+	font-weight: 500;
+	color: #4a4a4a;
+	margin-bottom: 30px;
+}
+.section_udobstva {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 15px;
+}
+.text_udobstva {
+	font-size: 16px;
+	font-weight: 500;
+	color: #6d6d6d;
+}
+	.block_udobstva {
+		list-style: disc;	
+		display: flex;
+		flex-direction: column;
+		row-gap: 15px;
+	}
+
+	.text_udobstva::marker {
+		color: #2F80ED;
+	}
+
+/* Бургер Меню */
+.burger {
+	display: none;
+	position: relative;
+	z-index: 99999;
+}
+.burger_btn {
+  height: 20px;
+  background-color:transparent;
+  border:none;
+}
+.header .burger_icon {
+	background-color: #fff;
+}
+.header .burger_icon::after  {
+	background-color: #fff;
+}
+.header .burger_icon::before {
+	background-color: #fff;
+}
+.burger_icon {
+	position:relative;
+	display:block;
+  	background-color: #101010;
+	height:4px;
+	width:30px;
+	border-radius: 10px;
+}
+	.burger_icon::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: -8px;
+		background-color: #101010;
+		height: 4px;
+		width: 30px;
+		border-radius: 10px;
+		transition: all .3s ease-in-out;
+	}
+	.burger_icon::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: -8px;
+		background-color: #101010;
+		height: 4px;
+		width: 30px;
+		border-radius: 10px;
+		transition: all .3s ease-in-out;
+
+	}
+.burger_icon_close .burger_icon {
+	background-color: transparent;
+}
+	.burger_icon_close .burger_icon::after {
+		transform: rotate(-45deg);
+		bottom: -1px;
+		background-color: #101010;
+	}
+	.burger_icon_close .burger_icon::before {
+		transform: rotate(45deg);
+		top: 1px;
+		background-color: #101010;
+	}
+
+
+.nav_mobile .phone_block {
+	display: block;
+	margin-top: 100px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 29px;
+}
+.nav_mobile .nav_text_header {
+	font-weight: 500;
+}
+.body_scroll {
+	overflow: hidden;
+}
+.header .nav_mobile {
+	position: fixed;
+}
+.nav_mobile {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color:  #fff;
+	z-index: 3;
+}
+.nav_mobile_active {
+	display: block;
+}
+.section_form h1 {
+	text-align: center;
+}
+.information {
+	padding: 75px 50px 65px 18px;
+}
+	.nav_mobile * {
+		color: #000;
+	}
+.ul_nav_header {
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+	column-gap: 25px;
+}
+
+/* Адаптив */
+
+@media (max-width: 450px) {
+	.burger {
+		display: block;
+	}
+	.main_nav_block, .btn_booking, .subtitle_text_maps {
+		display: none;
+	}
+	.logo {
+		font-size: 24px;
+	}
+	.block_title_site {
+		width: 100%;
+		padding: 0 15px;
+	}
+	.title_site {
+		font-size: 25px;
+		margin-bottom: 65px;
+	}
+	.block_title_site_2 img {
+		width: 47px;
+	}
+	.section_hotel_accommodation img {
+		height: 780px;
+	}
+	.block_hotel_accommodation {
+		padding: 0 15px;
+		width: 100%;
+	}
+	.block_hotel_accommodation .title_section_text {
+		font-size: 27px;
+	}
+	.text_hotel {
+		font-size: 14px;
+	}
+	.btn_href_3 {
+		max-width: 300px;
+		height: 50px;
+		font-size: 14px;
+	}
+	.section_about {
+		padding: 0 15px;
+		margin-bottom: 40px;
+	}
+	.section_about .min-1200 {
+		flex-direction: column-reverse;
+		gap: 20px;
+	}
+	.slider {
+		width: 100%;
+		height: 330px
+	}
+	.slick-initialized .slick-slide {
+		height: 330px;
+	}
+	.title_section {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+	.text_company {
+		font-size: 15px;
+		margin-bottom: 25px;
+	}
+	.btn_about {
+		width: 100%;
+		height: 48px;
+		font-size: 14px;
+	}
+	.section_nomer {
+		flex-direction: column;
+	}
+	.block_nomer {
+		width: 100%;
+	}
+	.block_nomer img {
+		height: 430px;
+	}
+	.btn_href_4 {
+	    width: 188px;
+	    height: 40px;
+    }
+    .section_nomer_2 img {
+    	height: 430px;
+    }
+    .section_food {
+    	flex-direction: column;
+    }
+    .block_info_food {
+    	width: 100%;
+    	text-align: center;
+    	align-items: center;
+    	padding: 80px 15px;
+    }
+    .block_info_food .title_section_text {
+    	font-size: 35px;
+    }
+    .block_img_food {
+    	width: 100%;
+    }
+    .block_img_food img {
+    	height: 500px;
+    }
+    .section_rules {
+		padding: 40px 15px;
+		margin-bottom: 40px;
+	}
+	.title_rules {
+		font-size: 27px;
+		margin-bottom: 21px;
+		line-height: 160%;
+	}
+	.text_rules {
+		margin-bottom: 25px;
+		font-size: 15px;
+	}
+	.section_food {
+		margin-bottom: 40px;
+	}
+	.section_services {
+		padding: 0 15px;
+		margin-bottom: 60px;
+	}
+	.title_block_sect {
+		font-size: 28px;
+		margin-bottom: 21px;
+	}
+	.slider_gallery img{
+		height: 340px;
+	}
+	.video-container video {
+		height: 450px;
+	}
+	.play-button img {
+		height: 80px;
+	}
+	.inst_block_text {
+		font-size: 15px;
+		margin-bottom: 25px;
+	}
+	.video-container {
+		margin-bottom: 30px;
+	}
+	.section_video {
+		margin-bottom: 70px;
+	}
+	footer {
+		height: 370px;
+		padding: 0 15px;
+	}
+	.title_site_footer {
+		font-size: 26px;
+	}
+	.text_site_footer {
+		font-size: 14px;
+	}
+	.btn_href_6 {
+		width: 230px;
+		height: 50px;
+	}
+	.btn_href_7 {
+		width: 200px;
+		height: 50px;
+		font-size: 13px;
+	}
+	.contact_section {
+		margin-bottom: 50px;
+		padding: 0px 15px;
+		flex-direction: column;
+	}
+	.main_address_phone h2 {
+		margin-bottom: 15px;
+		font-size: 27px;
+	}
+	.additional_text {
+		font-weight: 300;
+		font-size: 16px;
+	}
+	.header_two {
+		margin-bottom:30px;
+	}
+	.main_address_phone {
+		row-gap: 50px;
+	}
+	.additionally_text, .btn_phone_footer {
+		font-size: 20px;
+	}
+	.main_contact {
+		justify-content: flex-start;
+		margin-bottom: 35px;
+	}
+	.main_maps h2 {
+		font-size: 27px;
+		text-align: center;
+	}
+	.block_maps iframe {
+		width: 100%;
+		height: 400px;
+		padding-top: 0px;
+		border: none;
+	}
+	.section_nomer_2_2 {
+		padding: 0 15px;
+	}
+	.main_nomer .title_nomer {
+		font-size: 23px;
+	}
+	.section_form_booking {
+		max-width: 100%;
+	}
+	.section_info_nomer {
+		padding: 0 20px;
+		margin-bottom: 80px;
+	}
+	.main_udobstva h4 {
+		margin-bottom: 18px;
+	}
+	.text_udobstva {
+		font-size: 13px;
+		max-width: 170px;
+	}
+	.block_udobstva {
+		flex-wrap: wrap;
+	}
+	.text_zaezd {
+		font-size: 15px;
+	}
+	.text_tell {
+		font-size: 14px;
+	}
+	.block_nomer_ph_bk {
+		flex-direction: column;
+		gap: 30px;
+	}
+	.block_nomer_ph_bk .slider-2 img {
+		height: 430px;
+	}	
+	.block_nomer_ph_bk .slick-slider .slick-track, .slick-slider .slick-list {
+		height: 430px;
+	}
+}
